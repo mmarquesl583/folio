@@ -14,16 +14,18 @@
   }
 
   export let type = "linkedin"
-  let i_class = "h-5 w-5 text-orange-200 text-5xl lg:text-6xl hover:text-orange-100 "
+
+  let i_class = "h-5 w-5 text-orange-200 text-4xl lg:text-5xl hover:text-orange-100 "
+
   switch(type){
     case "github":
-    i_class += "fa-brands fa-github"
-        break
+      i_class += "fa-brands fa-github"
+    break
     case "doc":
-    i_class += "fa-solid fa-file-lines"
-        break
+      i_class += "fa-solid fa-file-lines"
+    break
     default:
-    i_class += "fa-brands fa-linkedin"
+      i_class += "fa-brands fa-linkedin"
   }
 </script>
 

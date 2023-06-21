@@ -27,6 +27,7 @@
     color: white;
     cursor: default;
 }
+
 /* TAILWIND */
 .centralize {
     @apply flex items-center justify-center;
@@ -38,5 +39,12 @@
     @apply font-bold text-5xl sm:text-8xl md:text-8xl lg:text-9xl;
 }
 .apresentation-text-b {
-    @apply font-bold text-xsl sm:text-sm md:text-base lg:text-lg flex justify-start text-slate-400;
+    @apply font-bold text-xsl md:text-sm lg:text-base flex justify-start md:justify-end text-slate-400;
+}
+.main_tecnologies {
+    background: linear-gradient(
+        0deg,
+        rgb(255, 255, 255) 7%,
+        rgba(22, 47, 71, 1) 100%
+    );
 }

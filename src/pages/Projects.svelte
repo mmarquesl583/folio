@@ -2,8 +2,8 @@
 
 </script>
 
-<div class=" centralize w-full h-full">
-    <div class="pl-4 grid items-center justify-center apresentation-text-m  w-full">
-       ok
+<div class="main_projects w-full h-full">
+    <div class="grid items-center justify-center w-full">
+
     </div>
 </div>
