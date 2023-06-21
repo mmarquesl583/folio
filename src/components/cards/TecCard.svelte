@@ -12,6 +12,7 @@
 <i class="fa-brands fa-sass"></i>
 <i class="fa-brands fa-css3-alt"></i>
 <i class="fa-solid fa-database"></i>
+<i class="fa-brands fa-square-git"></i>
 
 cakephp
 express
