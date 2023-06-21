@@ -1,0 +1,32 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+    background: rgb(22, 47, 71);
+    background: radial-gradient(
+        circle,
+        rgba(22, 47, 71, 1) 37%,
+        rgba(11, 14, 15, 1) 100%
+    );
+    color: white;
+}
+
+* {
+    /* @apply border border-black; */
+}
+.centralize {
+    @apply flex items-center justify-center;
+}
+.apresentation-text-t {
+    @apply font-bold text-2xl;
+}
+.apresentation-text-m {
+    @apply font-bold text-9xl;
+}
+.apresentation-text-m {
+    font-family: "Secular One";
+}
+.apresentation-text-b {
+    @apply font-bold text-sm flex justify-end;
+}
