@@ -2,7 +2,7 @@
     import ButtonApresentation from "../components/buttons/ButtonApresentation.svelte";
 </script>
 
-<div class=" centralize w-full h-full">
+<div class="main_apresentation centralize w-full h-full">
     <div class="pl-4 grid items-center justify-center apresentation-text-m  w-full">
         <span class="apresentation-text-t ">
             OI, EU SOU O MATHEUS

@@ -6,7 +6,18 @@
 /* * {
     @apply border border-black;
 } */
-body {
+/* body {
+
+} */
+
+/* CSS */
+.text-xsl {
+    font-size: 8pt;
+}
+.apresentation-text-m {
+    font-family: "Secular One";
+}
+.main_apresentation {
     background: rgb(22, 47, 71);
     background: radial-gradient(
         circle,
@@ -16,12 +27,6 @@ body {
     color: white;
     cursor: default;
 }
-
-/* CSS */
-.text-xsl {
-    font-size: 8pt;
-}
-
 /* TAILWIND */
 .centralize {
     @apply flex items-center justify-center;
@@ -31,9 +36,6 @@ body {
 }
 .apresentation-text-m {
     @apply font-bold text-5xl sm:text-8xl md:text-8xl lg:text-9xl;
-}
-.apresentation-text-m {
-    font-family: "Secular One";
 }
 .apresentation-text-b {
     @apply font-bold text-xsl sm:text-sm md:text-base lg:text-lg flex justify-start text-slate-400;

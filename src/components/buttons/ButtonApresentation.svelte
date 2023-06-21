@@ -14,7 +14,7 @@
   }
 
   export let type = "linkedin"
-  let i_class = "h-5 w-5 text-orange-200 text-5xl lg:text-6xl "
+  let i_class = "h-5 w-5 text-orange-200 text-5xl lg:text-6xl hover:text-orange-100 "
   switch(type){
     case "github":
     i_class += "fa-brands fa-github"
