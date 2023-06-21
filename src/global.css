@@ -2,6 +2,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* NATIVO */
+/* * {
+    @apply border border-black;
+} */
 body {
     background: rgb(22, 47, 71);
     background: radial-gradient(
@@ -10,23 +14,27 @@ body {
         rgba(11, 14, 15, 1) 100%
     );
     color: white;
+    cursor: default;
 }
 
-* {
-    /* @apply border border-black; */
+/* CSS */
+.text-xsl {
+    font-size: 8pt;
 }
+
+/* TAILWIND */
 .centralize {
     @apply flex items-center justify-center;
 }
 .apresentation-text-t {
-    @apply font-bold text-2xl;
+    @apply font-bold text-xsl sm:text-sm md:text-lg lg:text-xl flex items-center text-slate-400;
 }
 .apresentation-text-m {
-    @apply font-bold text-9xl;
+    @apply font-bold text-5xl sm:text-8xl md:text-8xl lg:text-9xl;
 }
 .apresentation-text-m {
     font-family: "Secular One";
 }
 .apresentation-text-b {
-    @apply font-bold text-sm flex justify-end;
+    @apply font-bold text-xsl sm:text-sm md:text-base lg:text-lg flex justify-start text-slate-400;
 }

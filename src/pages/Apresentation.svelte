@@ -3,11 +3,22 @@
 </script>
 
 <div class=" centralize w-full h-full">
-    <div class="grid items-center justify-center apresentation-text-m  w-full">
-        <span class="apresentation-text-t ">OI, EU SOU O MATHEUS</span>
-        <div class="apresentation-text-m flex">
-            REACT
-            <div class="flex items-center justify-around w-full">
+    <div class="pl-4 grid items-center justify-center apresentation-text-m  w-full">
+        <span class="apresentation-text-t ">
+            OI, EU SOU O MATHEUS
+        </span>
+        <div class="flex">
+            <span class="text-yellow-500">
+                J
+            </span>
+            <span class="text-black text-4xl flex items-end pb-5">
+                .
+            </span>
+            <span class="text-yellow-500">
+                S
+            </span>
+            CRIPT
+            <div class="hidden items-center justify-around w-full md:flex">
                 <ButtonApresentation />
                 <ButtonApresentation type="github" />
                 <ButtonApresentation type="doc" />
@@ -15,7 +26,7 @@
         </div>
         <span class="apresentation-text-m ">DEVELOPER</span>
         <span class="apresentation-text-b ">
-            TENHO DOIS ANOS DE EXPERIÊNCIA COMO DESENVOLVEDOR FRONT-END
+            TENHO DOIS ANOS DE EXPERIÊNCIA COMO DESENVOLVEDOR FULL-STACK
         </span>
         <span class="apresentation-text-b ">
             TRABALHO COMO CLT E FREELANCER.
