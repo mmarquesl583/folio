@@ -2,7 +2,7 @@
     import TecCard from "../components/cards/TecCard.svelte";
 </script>
 
-<div class="main_tecnologies w-full h-auto p-20">
+<div class="main_tecnologies w-full h-auto p-16">
     <div class="grid items-center justify-center text-white apresentation-text-m">
         <span class="centralize">
             TECNOLOGIAS
@@ -21,13 +21,13 @@
             <TecCard text="docker" i_class="fa-brands fa-docker" />
             <TecCard color="orange" text="WebSocket" />
             <TecCard color="yellow" i_class="fa-solid fa-database" />
-            <TecCard color="white" i_class="fa-brands fa-github" />
+            <TecCard color="white" i_class="fa-brands fa-linux" />
             <TecCard color="white" i_class="fa-brands fa-git" />
             <TecCard color="pink" i_class="fa-brands fa-sass" />
             <TecCard color="blue" i_class="fa-brands fa-bootstrap" />
+            <TecCard color="red" text="Tailwind" />
             <TecCard color="red" i_class="fa-brands fa-html5" />
             <TecCard color="blue" i_class="fa-brands fa-css3-alt" />
-            <TecCard color="red" text="Tailwind" />
           </div>
 
     </div>

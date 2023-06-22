@@ -27,7 +27,16 @@
     color: white;
     cursor: default;
 }
-
+.main_tecnologies {
+    background: linear-gradient(
+        0deg,
+        rgb(215, 215, 215) 7%,
+        rgba(22, 47, 71, 1) 100%
+    );
+}
+.main_projects {
+    background-color: rgb(215, 215, 215);
+}
 /* TAILWIND */
 .centralize {
     @apply flex items-center justify-center;
@@ -40,13 +49,6 @@
 }
 .apresentation-text-b {
     @apply font-bold text-xsl md:text-sm lg:text-base flex justify-start md:justify-end text-slate-400;
-}
-.main_tecnologies {
-    background: linear-gradient(
-        0deg,
-        rgb(255, 255, 255) 7%,
-        rgba(22, 47, 71, 1) 100%
-    );
 }
 .text-yellow {
     @apply text-yellow-400;
