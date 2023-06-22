@@ -71,3 +71,39 @@
 .text-green {
     @apply text-green-500;
 }
+.border-gold {
+    background: linear-gradient(
+        to right,
+        #bf953f,
+        #fcf6ba,
+        #b38728,
+        #fbf5b7,
+        #aa771c
+    );
+    padding: 4px;
+}
+
+.border-silver {
+    background: linear-gradient(
+        to right,
+        #bcbcbc,
+        #f4f4f4,
+        #a6a6a6,
+        #f3f3f3,
+        #979797
+    );
+
+    padding: 4px;
+}
+
+.border-bronze {
+    background: linear-gradient(
+        to right,
+        #884e1b,
+        #b38756,
+        #884e1b,
+        #b38756,
+        #884e1b
+    );
+    padding: 4px;
+}

@@ -8,27 +8,32 @@
             TECNOLOGIAS
         </span>
         <div class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-            <TecCard color="yellow" i_class="fa-brands fa-square-js" />
-            <TecCard color="green" i_class="fa-brands fa-node" />
-            <TecCard color="orange" text="Svelte" />
-            <TecCard color="blue" i_class="fa-brands fa-react" />
-            <TecCard color="green" i_class="fa-brands fa-vuejs" />
-            <TecCard color="red" i_class="fa-brands fa-angular" />
-            <TecCard color="green" text="Express" />
-            <TecCard color="purple" i_class="fa-brands fa-php" />
-            <TecCard color="red" text="CakePHP" />
-            <TecCard color="orange" i_class="fa-brands fa-python" />
-            <TecCard text="Docker" i_class="fa-brands fa-docker" />
-            <TecCard color="orange" text="WebSocket" />
-            <TecCard color="yellow" i_class="fa-solid fa-database" />
-            <TecCard color="white" i_class="fa-brands fa-linux" />
-            <TecCard color="white" i_class="fa-brands fa-git" />
-            <TecCard color="pink" i_class="fa-brands fa-sass" />
-            <TecCard color="blue" i_class="fa-brands fa-bootstrap" />
-            <TecCard color="red" text="Tailwind" />
-            <TecCard color="red" i_class="fa-brands fa-html5" />
-            <TecCard color="blue" i_class="fa-brands fa-css3-alt" />
-          </div>
+            <span class="col-span-2 sm:col-span-3 md:col-span-4 lg:col-span-5 text-xl lg:text-3xl">Domino:</span>
+            <TecCard border_color="gold" color="yellow" i_class="fa-brands fa-square-js" />
+            <TecCard border_color="gold" color="green" i_class="fa-brands fa-node" />
+            <TecCard border_color="gold" color="orange" text="Svelte" />
+            <TecCard border_color="gold" color="green" i_class="fa-brands fa-vuejs" />
+            <TecCard border_color="gold" color="purple" i_class="fa-brands fa-php" />
+            <TecCard border_color="gold" color="blue" text="Docker" i_class="fa-brands fa-docker" />
+            <TecCard border_color="gold" color="orange" text="WebSocket" />
+            <TecCard border_color="gold" color="yellow" i_class="fa-solid fa-database" />
+            <TecCard border_color="gold" color="white" i_class="fa-brands fa-linux" />
+            <TecCard border_color="gold" color="white" i_class="fa-brands fa-git" />
+            <TecCard border_color="gold" color="pink" i_class="fa-brands fa-sass" />
+            <TecCard border_color="gold" color="blue" i_class="fa-brands fa-bootstrap" />
+            <TecCard border_color="gold" color="red" text="Tailwind" />
+            <TecCard border_color="gold" color="red" i_class="fa-brands fa-html5" />
+            <TecCard border_color="gold" color="blue" i_class="fa-brands fa-css3-alt" />
+
+            <span class="col-span-2 sm:col-span-3 md:col-span-4 lg:col-span-5 text-xl lg:text-3xl">Conhecimentos Gerais:</span>
+            <TecCard border_color="silver" color="red" text="CakePHP" />
+            <TecCard border_color="silver" color="orange" i_class="fa-brands fa-python" />
+            <TecCard border_color="silver" color="red" i_class="fa-brands fa-angular" />
+
+            <span class="col-span-2 sm:col-span-3 md:col-span-4 lg:col-span-5 text-xl lg:text-3xl">Aprendendo:</span>
+            <TecCard border_color="silver" color="blue" i_class="fa-brands fa-react" />
+            <TecCard border_color="silver" color="green" text="Express" />
+        </div>
 
     </div>
 </div>
