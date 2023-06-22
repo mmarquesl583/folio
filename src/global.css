@@ -48,3 +48,24 @@
         rgba(22, 47, 71, 1) 100%
     );
 }
+.text-yellow {
+    @apply text-yellow-400;
+}
+.text-blue {
+    @apply text-blue-500;
+}
+.text-orange {
+    @apply text-orange-500;
+}
+.text-red {
+    @apply text-red-500;
+}
+.text-pink {
+    @apply text-pink-500;
+}
+.text-purple {
+    @apply text-purple-500;
+}
+.text-green {
+    @apply text-green-500;
+}

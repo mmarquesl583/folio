@@ -1,24 +1,37 @@
-<i class="fa-brands fa-docker"></i>
-<i class="fa-brands fa-square-js"></i>
-<i class="fa-brands fa-node-js"></i>
-<i class="fa-brands fa-node"></i>
-<i class="fa-brands fa-vuejs"></i>
-<i class="fa-brands fa-php"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-brands fa-react"></i>
-<i class="fa-brands fa-angular"></i>
-<i class="fa-solid fa-webhook"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-sass"></i>
-<i class="fa-brands fa-css3-alt"></i>
-<i class="fa-solid fa-database"></i>
-<i class="fa-brands fa-square-git"></i>
+<script>
+    export let color = "blue";
+    export let text;
+    export let i_class = "";
 
-cakephp
-express
-svelte
-websocket
-tailwind
-flex-box
-mysql
-class:name}
+    let text_class = "";
+    let card_class = `text-${color} w-40 h-20 border-2 border-gray-400 rounded-lg bg-gray-800 grid items-center justify-center hover:cursor-pointer transform transition-all duration-300 hover:scale-110 a`;
+    if (i_class === "") {
+      text_class = "text-2xl";
+    } else {
+      text_class = "text-xl";
+    }
+    if (text) {
+      i_class += " text-5xl";
+    } else {
+      i_class += " text-6xl";
+    }
+
+
+  </script>
+
+  <style>
+    .hover\:scale-110:hover {
+      transform: scale(1.10);
+    }
+  </style>
+
+  <div class={card_class}>
+    {#if i_class != " text-5xl"}
+    <i class={i_class}></i>
+    {/if}
+    {#if text}
+    <span class={text_class}>
+      {text}
+    </span>
+    {/if}
+  </div>

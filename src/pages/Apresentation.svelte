@@ -11,9 +11,6 @@
             <span class="text-yellow-500">
                 J
             </span>
-            <span class="text-black text-4xl flex items-end pb-5">
-                .
-            </span>
             <span class="text-yellow-500">
                 S
             </span>
