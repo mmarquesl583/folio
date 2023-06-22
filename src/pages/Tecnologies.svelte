@@ -18,7 +18,7 @@
             <TecCard color="purple" i_class="fa-brands fa-php" />
             <TecCard color="red" text="CakePHP" />
             <TecCard color="orange" i_class="fa-brands fa-python" />
-            <TecCard text="docker" i_class="fa-brands fa-docker" />
+            <TecCard text="Docker" i_class="fa-brands fa-docker" />
             <TecCard color="orange" text="WebSocket" />
             <TecCard color="yellow" i_class="fa-solid fa-database" />
             <TecCard color="white" i_class="fa-brands fa-linux" />
