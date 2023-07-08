@@ -1,5 +1,10 @@
 <script>
     import ButtonApresentation from "../components/buttons/ButtonApresentation.svelte";
+    import ScrollAnimation from "../components/shared/ScrollAnimation.svelte";
+    let scroll_display
+    setTimeout(() => {
+        scroll_display = true
+    }, 2000);
 </script>
 
 <div class="main_apresentation centralize w-full h-full">
@@ -29,4 +34,9 @@
             TRABALHO COMO CLT E FREELANCER.
         </span>
     </div>
+    {#if scroll_display}
+        <div class="absolute bottom-28">
+            <ScrollAnimation />
+        </div>
+    {/if}
 </div>

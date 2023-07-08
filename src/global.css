@@ -6,9 +6,9 @@
 /* * {
     @apply border border-black;
 } */
-/* body {
-
-} */
+body {
+    background-color: rgb(215, 215, 215);
+}
 
 /* CSS */
 .text-xsl {

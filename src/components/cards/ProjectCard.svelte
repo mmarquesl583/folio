@@ -1,0 +1,71 @@
+<script>
+    import Mockup from "../../../public/card_img/mockup.jpeg.png"
+</script>
+
+<img src={Mockup}>
+
+<style>
+    @property --a { /* control the gradient rotation (no need to update) */
+    syntax: "<angle>";
+    initial-value: 45deg;
+    inherits: true;
+    }
+    @property --r {
+    syntax: "<angle>";
+    initial-value: 5deg; /* control the image rotation */
+    inherits: true;
+    }
+    @property --p { /* control the color stops of the gradient (no need to update) */
+    syntax: "<percentage>";
+    initial-value: 0%;
+    inherits: true;
+    }
+    img {
+    --c: #a9c0ff; /* the main coloration of the rotating gradient */
+    width: 400px; /* the size of the image*/
+    height: 300px;
+    aspect-ratio: 1;
+    border-radius: 25px;
+    border: 4px solid #0000; /* the thickness for the rotating gradient */
+    padding: 10px; /* the gap */
+    background:
+        conic-gradient(from var(--a),
+        #0000 calc(30% - var(--p)),
+        var(--c) calc(50% - var(--p)) calc(50% + var(--p)),
+        #0000 calc(70% + var(--p))) border-box;
+    --g: linear-gradient(#000 0 0);
+    -webkit-mask:
+        var(--g),var(--g) padding-box,
+        conic-gradient(from var(--a),
+        #000d calc(30% - var(--p)),
+        #000  calc(50% - var(--p)) calc(50% + var(--p)),
+        #000d calc(70% + var(--p))) content-box;
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    --_t: perspective(450px); /* the bigger, the better */
+    animation: 4s linear infinite;
+    animation-name: a,r;
+    transition: --p .5s,--r .4s;
+    cursor: pointer;
+    }
+    img:hover {
+    --p: 50%;
+    --r: 0deg;
+    animation-play-state: paused;
+    }
+    @keyframes a {
+    to {--a: 405deg}
+    }
+
+    @keyframes r{
+    0%,
+    100%  {transform: var(--_t) rotate3d( 1, 1,0,var(--r))}
+    12.5% {transform: var(--_t) rotate3d( 0, 1,0,var(--r))}
+    25%   {transform: var(--_t) rotate3d(-1, 1,0,var(--r))}
+    37.5% {transform: var(--_t) rotate3d(-1, 0,0,var(--r))}
+    50%   {transform: var(--_t) rotate3d(-1,-1,0,var(--r))}
+    62.5% {transform: var(--_t) rotate3d( 0,-1,0,var(--r))}
+    75%   {transform: var(--_t) rotate3d( 1,-1,0,var(--r))}
+    87.5% {transform: var(--_t) rotate3d( 1, 0,0,var(--r))}
+    }
+</style>
