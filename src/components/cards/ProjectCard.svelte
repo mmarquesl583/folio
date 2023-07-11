@@ -22,8 +22,8 @@
     }
     img {
     --c: #a9c0ff; /* the main coloration of the rotating gradient */
-    width: 400px; /* the size of the image*/
-    height: 300px;
+    width: 500px; /* the size of the image*/
+    height: 350px;
     aspect-ratio: 1;
     border-radius: 25px;
     border: 4px solid #0000; /* the thickness for the rotating gradient */

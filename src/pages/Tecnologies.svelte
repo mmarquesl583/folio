@@ -34,6 +34,5 @@
             <TecCard border_color="bronze" color="blue" i_class="fa-brands fa-react" />
             <TecCard border_color="bronze" color="green" text="Express" />
         </div>
-
     </div>
 </div>
