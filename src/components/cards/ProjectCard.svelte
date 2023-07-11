@@ -10,7 +10,7 @@
     }
 </script>
 
-<div on:click={openNewWindow(link)}>
+<div on:click={openNewWindow(link)} class="ml-6 mr-6">
     {#if nanapro}
     <img src={MockupNanapro}>
     {:else}

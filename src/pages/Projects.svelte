@@ -7,10 +7,12 @@
         <span class="centralize">
                 PROJETOS
         </span>
-        <!-- <div class="mt-8 grid grid-cols-1 gap-3 md:grid-cols-2 lg:gap-14"> -->
-            <div class="mt-8 flex">
-            <ProjectCard nanapro link="http://nanapro.com.br"/>
-            <!-- <ProjectCard /> -->
+        <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-14">
+                <ProjectCard nanapro link="http://nanapro.com.br"/>
+                <ProjectCard nanapro link="http://nanapro.com.br"/>
+                <ProjectCard nanapro link="http://nanapro.com.br"/>
+                <ProjectCard nanapro link="http://nanapro.com.br"/>
+                <!-- <ProjectCard /> -->
         </div>
     </div>
 </div>
