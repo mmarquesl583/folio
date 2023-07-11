@@ -1,13 +1,20 @@
 <script>
+    export let link
     export let title
     export let icon
 
     let btn_class = "hover:cursor-pointer w-12 h-12 border rounded-full flex items-center justify-center mr-2 ml-2"
+
     btn_class += ` btn-${title}`
     icon += ` text-3xl`
+
+    function openNewWindow(url) {
+        window.open(url, "_blank");
+    }
 </script>
 
-<div  class={btn_class} {title}>
+<!-- svelte-ignore a11y-click-events-have-key-events -->
+<div on:click={openNewWindow(link)} class={btn_class} {title}>
     <i class="{icon}"></i>
 </div>
 
@@ -30,7 +37,7 @@
         background-color: white
     }
     .btn-GitHub:hover{
-        background-color: #d1d1d1
+        background-color: #f5f5f5
     }
     .btn-Email{
         background-color: #ff8d8d;

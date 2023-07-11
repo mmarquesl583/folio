@@ -1,8 +1,22 @@
 <script>
-    import Mockup from "../../../public/card_img/mockup.jpeg.png"
+    import MockupNanapro from "../../../public/card_img/mockup-nanapro.png"
+    import Mockup from "../../../public/card_img/mockup.png"
+
+    export let nanapro
+    export let link
+
+    function openNewWindow(url) {
+        window.open(url, "_blank");
+    }
 </script>
 
-<img src={Mockup}>
+<div on:click={openNewWindow(link)}>
+    {#if nanapro}
+    <img src={MockupNanapro}>
+    {:else}
+    <img src={Mockup}>
+    {/if}
+</div>
 
 <style>
     @property --a { /* control the gradient rotation (no need to update) */
@@ -21,7 +35,7 @@
     inherits: true;
     }
     img {
-    --c: #a9c0ff; /* the main coloration of the rotating gradient */
+    --c: #ffffff; /* the main coloration of the rotating gradient */
     width: 500px; /* the size of the image*/
     height: 350px;
     aspect-ratio: 1;
@@ -30,9 +44,9 @@
     padding: 10px; /* the gap */
     background:
         conic-gradient(from var(--a),
-        #0000 calc(30% - var(--p)),
-        var(--c) calc(50% - var(--p)) calc(50% + var(--p)),
-        #0000 calc(70% + var(--p))) border-box;
+        #0000 calc(100% - var(--p)),
+        var(--c) calc(100% - var(--p)) calc(100% + var(--p)),
+        #0000 calc(100% + var(--p))) border-box;
     --g: linear-gradient(#000 0 0);
     -webkit-mask:
         var(--g),var(--g) padding-box,
@@ -41,31 +55,8 @@
         #000  calc(50% - var(--p)) calc(50% + var(--p)),
         #000d calc(70% + var(--p))) content-box;
     -webkit-mask-composite: xor;
-            mask-composite: exclude;
-    --_t: perspective(450px); /* the bigger, the better */
-    animation: 4s linear infinite;
-    animation-name: a,r;
     transition: --p .5s,--r .4s;
     cursor: pointer;
-    }
-    img:hover {
-    --p: 50%;
-    --r: 0deg;
-    animation-play-state: paused;
-    }
-    @keyframes a {
-    to {--a: 405deg}
-    }
-
-    @keyframes r{
-    0%,
-    100%  {transform: var(--_t) rotate3d( 1, 1,0,var(--r))}
-    12.5% {transform: var(--_t) rotate3d( 0, 1,0,var(--r))}
-    25%   {transform: var(--_t) rotate3d(-1, 1,0,var(--r))}
-    37.5% {transform: var(--_t) rotate3d(-1, 0,0,var(--r))}
-    50%   {transform: var(--_t) rotate3d(-1,-1,0,var(--r))}
-    62.5% {transform: var(--_t) rotate3d( 0,-1,0,var(--r))}
-    75%   {transform: var(--_t) rotate3d( 1,-1,0,var(--r))}
-    87.5% {transform: var(--_t) rotate3d( 1, 0,0,var(--r))}
+    --p: 100%
     }
 </style>
