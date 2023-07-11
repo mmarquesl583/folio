@@ -37,9 +37,6 @@ body {
 .main_projects {
     background-color: rgb(215, 215, 215);
 }
-.main_contacts {
-    background-color: white;
-}
 /* TAILWIND */
 .centralize {
     @apply flex items-center justify-center;

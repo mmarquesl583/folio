@@ -6,7 +6,7 @@
 
     let text_class
     let border_class = `rounded-lg border-${border_color} hover:scale-110`;
-    let card_class = `text-${color} w-auto h-20 rounded-lg bg-gray-800 grid items-center justify-center hover:cursor-pointer transform transition-all duration-300  a`;
+    let card_class = `text-${color} w-auto h-20 rounded-lg bg-gray-800 grid items-center justify-center hover:cursor-pointer transform transition-all duration-300 `;
     if (i_class === "") {
       text_class = "text-2xl";
     } else {
